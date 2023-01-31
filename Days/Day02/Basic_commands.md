@@ -5,7 +5,7 @@
 ![docker_version](/images/docker_version_ss.png)
 </br>
 2. It tell all the running containers``docker ps``</br>
-![docker_process](/images/docker_ps_ss.png)
+<!-- ![docker_ps](/images/docker_ps_ss.png) -->
 </br>
 
 3. It tell all the container running and stop ``docker ps -a``
