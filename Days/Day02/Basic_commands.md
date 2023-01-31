@@ -4,8 +4,7 @@
 ``docker --version``</br>
 ![docker_version](/images/docker_version_ss.png)
 </br>
-2. It tell all the running containers 
-``docker ps`` </br>
+2. It tell all the running containers``docker ps``</br>
 ![docker_process](/images/docker_ps_ss.png)
 </br>
 
