@@ -74,3 +74,40 @@
 - Restart container
 - Kill container
 - Destroy container
+
+  
+### Describe the process of process of containerizating an application 
+- write a dockerfile/containerfile that includes your app and its dependencies and command.
+- build the image using same file
+- push the image to remote repository (optional)
+- run the container using the same image.
+
+## IMAGES
+
+### why are container images so small ?
+- most of the container images don't need kernal. they share and access of the host system
+- Containers intended to run specific application in most cases. This means they hold only what the application needs in order to run
+
+### Explain container image layers
+- The layers of an image is where all the content is stored - code, files, etc.
+- Each layer is independent
+- Each layer has an ID that is an hash based on its content
+- The layers (as the image) are immutable which means a change to one of the layers can be easily identified
+
+## Containerfile/Dockerfile
+
+### What is containerfile/dockerfile
+**A dockerfile/containerfile is text file that contains all the instruction for building an image which containers can use.**
+
+### List five different instructions that are available for use in a Containerfile/Dockerfile
+- WORKDIR: sets the working directory inside the image filesystems for all the instructions following it
+- EXPOSE: exposes the specified port (it doesn't adds a new layer, rather documented as image metadata)
+- ENTRYPOINT: specifies the startup commands to run when a container is started from the image
+- ENV: sets an environment variable to the given value
+- USER: sets the user (and optionally the user group) to use while running the image
+
+### What is the difference between ADD and COPY in Containerfile/Dockerfile?
+**COPY takes in a source and destination. It lets you copy in a file or directory from the build context into the Docker image itself.ADD lets you do the same, but it also supports two other sources. You can use a URL instead of a file or directory from the build context. In addition, you can extract a tar file from the source directly into the destination.**
+
+### What is the difference between CMD and RUN in Containerfile/Dockerfile?
+**RUN lets you execute commands inside of your Docker image. These commands get executed once at build time and get written into your Docker image as a new layer. CMD is the command the container executes by default when you launch the built image. A Containerfile/Dockerfile can only have one CMD. You could say that CMD is a Docker run-time operation, meaning it’s not something that gets executed at build time. It happens when you run an image. A running image is called a container.**
