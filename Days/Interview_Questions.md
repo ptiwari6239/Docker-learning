@@ -46,6 +46,12 @@
 [Answer](https://github.com/ptiwari6239/Docker-learning/blob/master/Days/Docker-architecture.md)
 
 
+
+### What is docker Swarm ?
+**Docker Swarm is an orchestration management tool that runs on Docker applications. It helps end-users in creating and deploying a cluster of Docker nodes.**
+
+
+
 ### What is docker file
 
 **Docker can build images automatically by reading the instructions from a file called Dockerfile.</br>A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image.**
@@ -138,3 +144,6 @@
 
 ### what does .dockerignore used for ?
 **By default, Docker uses everything (all the files and directories) in the directory you use as build context. .dockerignore used for excluding files and directories from the build context**
+
+
+###
